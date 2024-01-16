@@ -13,6 +13,6 @@ const Chapter = db.define('chapter', {
 
 export default Chapter;
 
-(async()=> {
+(async () => {
     await db.sync();
 })();

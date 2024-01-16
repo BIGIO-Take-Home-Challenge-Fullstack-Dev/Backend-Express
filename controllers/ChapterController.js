@@ -39,11 +39,11 @@ export const saveChapter = async (req, res) => {
 export const updateChapter = async (req, res) => {
     try {
         await Chapter.update(req.body, {
-            where:{
+            where: {
                 id: req.params.id
             }
         })
-        res.status(200).json({msg: "Chapter Updated"})
+        res.status(200).json({ msg: "Chapter Updated" })
     } catch (error) {
         console.log(error.message);
     }
